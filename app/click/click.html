@@ -1,1 +1,10 @@
-<p>This is the partial for view 1.</p>
+<aside class="aside-wrapper">
+	<h4 class="col-md-12">Clicks</h4>
+  <ol class="list-styled">
+    <li ng-repeat="click in clickArray">
+    	<a href="">x - {{ click.xCordinate }}, y - {{ click.xCordinate }}</a>
+    </li>
+  </ol>
+</aside>
+<div ng-click="clickEvent($event)" class="click-playground">
+</div>

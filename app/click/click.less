@@ -1,0 +1,32 @@
+@theme-color: #337ab7;
+@canvas-height: 450px;
+@sidebar-bg:  #f8f8f8;
+
+.aside-wrapper {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  height: ~"calc(100% - 50px)";
+  overflow: auto;
+  overflow-x: hidden;
+  width: @sidebar-width;
+  float: left;
+  background-color: darken(@sidebar-bg, 0%);
+  box-shadow: 2px 0 10px darken(@sidebar-bg, 10%);
+}
+
+.click-playground {
+  height: @canvas-height;
+  background-color: lighten(@theme-color, 50%);
+  margin-bottom: 15px;
+}
+
+.circle-span {
+  position: absolute;
+  width: 30px; 
+  height: 30px;
+  background-color: lighten(@theme-color, 25%);
+  border-radius: 50%;
+  border: 1px solid lighten(@theme-color, 0%);
+}
