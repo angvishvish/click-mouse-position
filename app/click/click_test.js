@@ -1,14 +1,14 @@
 'use strict';
 
-describe('myApp.view1 module', function() {
+describe('myApp.click module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('myApp.click'));
 
   describe('view1 controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      var view1Ctrl = $controller('View1Ctrl');
+      var view1Ctrl = $controller('ClickCtrl');
       expect(view1Ctrl).toBeDefined();
     }));
 
