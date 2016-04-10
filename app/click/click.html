@@ -1,14 +1,21 @@
 <aside class="aside-wrapper">
-  <h3 class="col-md-12">
-    Clicks
-    <a ng-show="clickArray.length>0" ng-click="clearStorage()" class="btn btn-link pull-right">Clear</a>
-  </h3>
-  <div class="clearfix"></div>
-  <ol class="list-styled">
-    <li ng-repeat="click in clickArray">
-      <a href="">X - {{ click.xCordinate }}, Y - {{ click.yCordinate }}</a>
-    </li>
-  </ol>
+  <table class="table table-responsive table-hover table-striped">
+    <thead>
+      <tr>
+        <td width="250">Click</td>
+        <td width="250">
+          Position
+          <a ng-show="clickArray.length>0" ng-click="clearStorage()" class="pull-right" role="button">Clear</a>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="click in clickArray">
+        <td>{{ click.timestamp | date:'hh:mm:ss a'}}</td>
+        <td>X - {{ click.xCordinate }}, Y - {{ click.yCordinate }}</td>
+      </tr>
+    </tbody>
+  </table>
 </aside>
 <section ng-click="clickEvent($event)" class="click-playground">
 </section>
