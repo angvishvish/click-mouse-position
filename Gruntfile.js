@@ -11,7 +11,10 @@ module.exports = function(grunt) {
           'app/bower_components/angular-route/angular-route.js',
           'app/bower_components/ngstorage/ngStorage.js',
           'app/app.js',
-          'app/click/click.js'
+          'app/click/click.js',
+          'app/components/version/version.js',
+          'app/components/version/version-directive.js',
+          'app/components/version/interpolate-filter.js'
         ],
         dest: 'app/<%= pkg.name %>.add.js'
       }
