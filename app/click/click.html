@@ -1,10 +1,14 @@
 <aside class="aside-wrapper">
-	<h4 class="col-md-12">Clicks</h4>
+  <h3 class="col-md-12">
+    Clicks
+    <a ng-show="clickArray.length>0" ng-click="clearStorage()" class="btn btn-link pull-right">Clear</a>
+  </h3>
+  <div class="clearfix"></div>
   <ol class="list-styled">
     <li ng-repeat="click in clickArray">
-    	<a href="">x - {{ click.xCordinate }}, y - {{ click.xCordinate }}</a>
+      <a href="">X - {{ click.xCordinate }}, Y - {{ click.yCordinate }}</a>
     </li>
   </ol>
 </aside>
-<div ng-click="clickEvent($event)" class="click-playground">
-</div>
+<section ng-click="clickEvent($event)" class="click-playground">
+</section>

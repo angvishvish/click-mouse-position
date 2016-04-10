@@ -5,7 +5,8 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.click',
   'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
+])
+
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/click'});
 }]);
